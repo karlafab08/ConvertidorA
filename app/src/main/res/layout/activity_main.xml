@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="235dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:text="Seleccionar modo"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="71dp"
+            android:layout_height="735dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="-3dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="65dp"
+            android:layout_height="730dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="421dp"
+            android:layout_height="57dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            tools:layout_editor_absoluteY="-3dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="342dp"
+            android:layout_height="434dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="9dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        style="@style/Widget.Material3.CompoundButton.RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="Peso"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        style="@style/Widget.Material3.CompoundButton.RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="Volumen"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        style="@style/Widget.Material3.CompoundButton.RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="Temperatura"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        style="@style/Widget.Material3.CompoundButton.RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="Longitud"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/entrar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Elegir" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="272dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="1dp"
+            android:background="#FBFBFB"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2" />
+
+        <LinearLayout
+            android:layout_width="419dp"
+            android:layout_height="29dp"
+            android:background="#78D0DC"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-6dp"
+            tools:layout_editor_absoluteY="56dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#78D0DC"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="-6dp"
+                tools:layout_editor_absoluteY="56dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#78D0DC"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="-6dp"
+                    tools:layout_editor_absoluteY="56dp"></LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

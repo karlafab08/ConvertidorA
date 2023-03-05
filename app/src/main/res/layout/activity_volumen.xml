@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-60dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="277dp"
+            android:layout_height="127dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.076">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="261dp"
+                android:layout_height="114dp"
+                android:fontFamily="cursive"
+                android:text="Conversion Volumen"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="187dp"
+            android:layout_height="217dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+            app:layout_constraintVertical_bias="0.287"
+            tools:layout_editor_absoluteX="16dp">
+
+            <RadioButton
+                android:id="@+id/mili"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Mililitros" />
+
+            <RadioButton
+                android:id="@+id/galo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Galones" />
+
+            <RadioButton
+                android:id="@+id/metroCu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Metro Cubico" />
+
+            <RadioButton
+                android:id="@+id/pieCu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Pies cubicos" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/convertir"
+            android:layout_width="396dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="336dp"
+            android:background="#09D1EA"
+            android:text="Convertir"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+            tools:layout_editor_absoluteX="6dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="188dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="98dp"
+            android:text="Metros"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="188dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="192dp"
+            android:text="a"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+        <EditText
+            android:id="@+id/txtresultvolumen"
+            android:layout_width="184dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="222dp"
+            android:background="#BBDBDF"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+
+        <EditText
+            android:id="@+id/txtvolumen"
+            android:layout_width="186dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="123dp"
+            android:background="#C2DCDF"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
